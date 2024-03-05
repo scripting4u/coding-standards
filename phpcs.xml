@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ruleset  name="PHP_CodeSniffer">
+    <description>PHPCS configuration file.</description>
+    <!-- check all files in the app directory, feel free to add more files with:
+        <file>FOLDER NAME</file>
+    -->
+    <file>app</file>
+
+    <!-- exclude migrations directory from the violation check-->
+    <exclude-pattern>*/database/*\.php</exclude-pattern>
+    <exclude-pattern>*/tests/Core/*/Fixtures/*\.php$</exclude-pattern>
+
+    <!-- Exclude the camel caps for models folder -->
+    <rule ref="PSR1.Methods.CamelCapsMethodName.NotCamelCaps">
+        <exclude-pattern>app/Models</exclude-pattern>
+    </rule>
+
+    <!-- Our base rule: set to PSR12-->
+    <rule  ref="PSR12"/>
+</ruleset>
