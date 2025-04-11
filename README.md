@@ -33,10 +33,10 @@ composer require --dev "scripting4u/coding-standards:^1.0.1"
 - Check if your IDE needs extra configuration to use this
 
 ### Supported Laravel versions
-| Laravel Version     | Larastan Version |
-|---------------------|------------------|
-| \> 10.0 && >= 11.16 | 1.0.0            |
-| 11.16+              | 1.0.1            |
+| Laravel Version     | CS Version |
+|---------------------|------------|
+| \> 10.0 && >= 11.16 | 1.x        |
+| 11.16+              | 2.x        |
 
 ## Todo
 We can expand this repository to contain configuration for Live Templates or any other configuration for phpstorm.
