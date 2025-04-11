@@ -14,20 +14,8 @@ This repository contains the rule sets and the configuration files.
 
 ## Setup
 
-add to composer file:
-```json
-{
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "https://github.com/scripting4u/coding-standards"
-        }
-    ]
-}
-```
-
 ```php
-composer require --dev "scripting4u/coding-standards:^1.0.1"
+composer require --dev "scripting4u/coding-standards:^2"
 ```
 
 - Check if your IDE needs extra configuration to use this
@@ -37,7 +25,3 @@ composer require --dev "scripting4u/coding-standards:^1.0.1"
 |---------------------|------------|
 | \> 10.0 && >= 11.16 | 1.x        |
 | 11.16+              | 2.x        |
-
-## Todo
-We can expand this repository to contain configuration for Live Templates or any other configuration for phpstorm.
-
